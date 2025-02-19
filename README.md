@@ -85,7 +85,7 @@ Un endpoint que devuelva todos los pedidos realizados por un usuario específico
     ]
    ```
    <br><br>
-5.**Ejecución de tarea asíncrona**: El endpoint debe publicar un evento en rabbitMQ que, al ser consumido por la aplicación, realice la tarea asíncrona de eliminar de la base de datos todos los usuarios inactivos. 
+5.**Ejecución de tarea asíncrona**: El endpoint debe publicar un evento en rabbitMQ que, al ser consumido por la aplicación, realice la tarea asíncrona de activar todos los usuarios inactivos. 
 
 ```Respuesta:
   HTTP/1.1 204 No Content
@@ -122,10 +122,14 @@ Una vez terminado realizar una **pull request** a la rama *main*.
   - Nombre: *dempo*
   - Usuario: *dempo*
   - Password: *dempo*
+  - Host: *localhost*
+  - Puerto: *5432*
 
 - Credenciales de conexión a RabbitMQ:
   - Usuario: *dempo*
   - Password: *dempo*
+  - Host: *localhost*
+  - Puerto: *5672*
 
 
 
