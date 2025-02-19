@@ -46,7 +46,7 @@ Un endpoint que devuelva todos los pedidos realizados por un usuario específico
   ]
   ```
 <br><br>
-3.**Producto más vendido por categoría**: Debe identificar el producto más vendido en cada categoría. La respuesta debe incluir el nombre de la categoría, el nombre del producto y la cantidad total vendida.
+3. **Producto más vendido por categoría**: Debe identificar el producto más vendido en cada categoría. La respuesta debe incluir el nombre de la categoría, el nombre del producto y la cantidad total vendida.
 ```json
   [
     {
@@ -85,7 +85,7 @@ Un endpoint que devuelva todos los pedidos realizados por un usuario específico
     ]
    ```
    <br><br>
-5.**Ejecución de tarea asíncrona**: El endpoint debe publicar un evento en rabbitMQ que, al ser consumido por la aplicación, realice la tarea asíncrona de activar todos los usuarios inactivos. 
+5. **Ejecución de tarea asíncrona**: El endpoint debe publicar un evento en rabbitMQ que, al ser consumido por la aplicación, realice la tarea asíncrona de activar todos los usuarios inactivos. 
 
 ```Respuesta:
   HTTP/1.1 204 No Content
