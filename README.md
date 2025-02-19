@@ -86,7 +86,7 @@ Un endpoint que devuelva todos los pedidos realizados por un usuario específico
     ]
    ```
    <br><br>
-5. **Ejecución de tarea asíncrona**: El endpoint debe publicar un evento en rabbitMQ que, al ser consumido por la aplicación, realice la tarea asíncrona de activar todos los usuarios inactivos. 
+5. **Ejecución de tarea asíncrona**: El endpoint debe publicar un evento en rabbitMQ que, al ser consumido por la aplicación, realice la tarea asíncrona de activar todos los usuarios inactivos. (status = inactive => status = active)
 
 ```Respuesta:
   HTTP/1.1 204 No Content
