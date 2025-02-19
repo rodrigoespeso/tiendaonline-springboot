@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq_local
+    restart: always
+    ports:
+      - "5672:5672"   # App connections
+      - "15672:15672" # Web UI
+    environment:
+      RABBITMQ_DEFAULT_USER: dempo
+      RABBITMQ_DEFAULT_PASS: dempo
+    volumes:
+      - ./rabbitmq/data/:/var/lib/rabbitmqq
+    networks:
+      - my_network
+
+  db:
+    image: postgres:15-alpine
+    container_name: postgres_local
+    restart: always
+    environment:
+      POSTGRES_USER: dempo
+      POSTGRES_PASSWORD: dempo
+      POSTGRES_DB: dempo
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db/data:/var/lib/postgresql/data
+      - ./db_init:/docker-entrypoint-initdb.d/
+
+networks:
+  my_network:
+    driver: bridge
+
