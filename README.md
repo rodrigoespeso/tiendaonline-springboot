@@ -11,6 +11,8 @@ Debe implementarse un backend para una tienda online, con varios endpoints
 - Se debe usar la base de datos adjunta. Se proporciona un **docker compose** listo para usar.
 - En caso de no usar docker, cargar el script ubicado db_init/init-db.sql en el servidor de base de datos local.
 - La implementación debe hacerse teniendo en cuenta que esto es el **principio de un proyecto que se presupone irá creciendo con el tiempo**. Se debe seguir una **arquitectura** que permita al proyecto **escalar con las menores dificultades posibles**.
+- Realizar pruebas de **testing** de al menos uno de los endpoints.
+- Implementar el **control** de **errores** y **excepciones** de al menos una parte de la aplicación.
 
 ### Endpoints requeridos
 1. **Desglose de ventas por categoría**: El desglose de ventas totales por categoría. Esto incluye la cantidad total vendida multiplicada por el precio del producto en cada categoría.
@@ -95,9 +97,9 @@ Un endpoint que devuelva todos los pedidos realizados por un usuario específico
 ## Criterios de aceptación
 - El proyecto se ha inicializado correctamente.
 - Los 5 endpoints realizan bien su funcionalidad y devuelven la información requerida.
-- Realizar pruebas de testing de al menos uno de los endpoints.
-- Implementar el control de errores y excepciones de al menos una parte de la aplicación.
-- Diseño de eventos y asincronía.
+- Se han realizado los tests correctamente de al menos uno de los endpoints
+- Se ha implementado el control de errores y excepciones de al menos una parte de la aplicación.
+- Se han relaizado el diseño y la implementación correcta de eventos y asincronía.
 
 ## Recursos
 ### Diagrama ER de la base de datos 
