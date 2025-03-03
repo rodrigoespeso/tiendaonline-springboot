@@ -64,7 +64,7 @@ Un endpoint que devuelva todos los pedidos realizados por un usuario específico
   ]
   ```
    <br><br>
-4. **Descuentos más altos mediante una API externa**: Este endpoint debe devolver los 3 descuentos con mayor porcentaje. Esta información debe ser obtenida de una API externa en lugar de consultar la base de datos( GET: https://run.mocky.io/v3/161890d8-6a84-4cea-bd94-0001eb8a7dcd ). La implementación del cliente HTTP queda a su criterio. 
+4. **Descuentos más altos mediante una API externa**: Este endpoint debe devolver los 3 descuentos con mayor porcentaje. Esta información debe ser obtenida de una API externa en lugar de consultar la base de datos( GET: [https://run.mocky.io/v3/f3342e38-2f71-4291-b1be-006fe2730b1b]). La implementación del cliente HTTP queda a su criterio. 
 ```json
      [
     {
