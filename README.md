@@ -88,18 +88,12 @@ Un endpoint que devuelva todos los pedidos realizados por un usuario específico
     ]
    ```
    <br><br>
-5. **Ejecución de tarea asíncrona**: El endpoint debe publicar un evento en rabbitMQ que, al ser consumido por la aplicación, realice la tarea asíncrona de activar todos los usuarios inactivos. (status = inactive => status = active)
-
-```Respuesta:
-  HTTP/1.1 204 No Content
-  ```
 <br><br>
 ## Criterios de aceptación
 - El proyecto se ha inicializado correctamente.
 - Los 5 endpoints realizan bien su funcionalidad y devuelven la información requerida.
 - Se han realizado los tests correctamente de al menos uno de los endpoints
 - Se ha implementado el control de errores y excepciones de al menos una parte de la aplicación.
-- Se han relaizado el diseño y la implementación correcta de eventos y asincronía.
 
 ## Recursos
 ### Diagrama ER de la base de datos 
@@ -128,11 +122,6 @@ Una vez terminado realizar una **pull request** a la rama *main*.
   - Host: *localhost*
   - Puerto: *5432*
 
-- Credenciales de conexión a RabbitMQ:
-  - Usuario: *dempo*
-  - Password: *dempo*
-  - Host: *localhost*
-  - Puerto: *5672*
 
 
 
