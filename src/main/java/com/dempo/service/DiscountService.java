@@ -19,12 +19,10 @@ public class DiscountService {
     public List<Discount> getTopDiscounts() {
         RestTemplate restTemplate = new RestTemplate();
 
-        // Llamar a la API externa
         ResponseEntity<Discount[]> response = restTemplate.getForEntity(DISCOUNTS_URL, Discount[].class);
 
-        // Verificar si la respuesta contiene datos
         if (response.getBody() == null || response.getBody().length == 0) {
-            return List.of(); // Retorna una lista vacía en lugar de null
+            return List.of();
         }
 
         // Ordenar por porcentaje de descuento y devolver los 3 mayores

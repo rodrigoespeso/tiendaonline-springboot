@@ -19,7 +19,7 @@ public interface OrderItemRepository extends JpaRepository<OrderItemEntity, Long
 	@Query("""
 			SELECT new com.dempo.dto.CategorySalesDTO(
 				c.name, CAST(SUM(oi.quantity * oi.price) AS java.math.BigDecimal))
-		       FROM OrderItemEntity oi
+		       FROM OrderItemEntity oi	
 		       JOIN oi.product p 
 		       JOIN p.category c
 		       GROUP BY c.name

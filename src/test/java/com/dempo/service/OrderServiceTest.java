@@ -35,11 +35,6 @@ class OrderServiceTest {
     @InjectMocks
     private OrderService orderService;
 
-    @BeforeEach
-    void setUp() {
-        // Opcional: Se ejecuta antes de cada test
-    }
-
     @Test
     void testGetOrdersByUserId_whenExistingUser_thenReturnsOrders() {
         

@@ -13,9 +13,6 @@
         <relativePath/> 
     </parent>
 	
-	<!-- TODO: comentar cada dependencia, por que se uso-->
-	<!-- TODO: revisar versionado de cada una-->
-	
     <properties>
         <java.version>17</java.version>
         <spring-boot.version>3.4.3</spring-boot.version>
@@ -63,14 +60,12 @@
 	        <scope>provided</scope>
     </dependency>
     
-    <!-- https://mvnrepository.com/artifact/jakarta.validation/jakarta.validation-api -->
 	<dependency>
 	    <groupId>jakarta.validation</groupId>
 	    <artifactId>jakarta.validation-api</artifactId>
 	    <version>3.0.2</version>
 	</dependency>
 	
-	<!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
 	<dependency>
 	    <groupId>org.hibernate.validator</groupId>
 	    <artifactId>hibernate-validator</artifactId>
