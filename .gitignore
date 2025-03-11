@@ -1,0 +1,7 @@
+/target/
+/db/
+/rabbitmq/
+.classpath
+.factorypath
+.settings/
+.project

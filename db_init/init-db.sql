@@ -664,7 +664,3 @@ INSERT INTO order_items (order_id, product_id, quantity, price) VALUES
 (60, 40, 3, 14.99),
 (61, 1, 6, 29.99),
 (61, 2, 4, 49.99);
-
-
-
-
