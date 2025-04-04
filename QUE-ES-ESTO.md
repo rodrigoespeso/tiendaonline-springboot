@@ -1,6 +1,6 @@
 # Qué es esto
 
-Ejercicio acometido con patrón de arquitectura en tres capas (**Controller**, **Service**, **Repository**) utilizando **Spring Boot**.
+[Ejercicio](README.md) acometido con patrón de arquitectura en tres capas (**Controller**, **Service**, **Repository**) utilizando **Spring Boot**.
 
 - Uso de **JPA** con **PostgreSQL** desplegado en **Docker**
 - Uso de **entidades** y **DTOs**
